@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "nameHotel": "Century Hotel",
+  "hotelAddresss": "10a avenida 09-10, zona 9. Guatemala",
+  "services": [
+    {
+      "typeService": "Gimnasio",
+      "description": "Servicio de gimnasio de 8:00 am a 9:00 pm",
+      "priceService": 40,
+      "_id": {
+        "$oid": "6817e7e2f26903ae49a002cc"
+      }
+    },
+    {
+      "typeService": "Cancha de basquet",
+      "description": "Servicio de cancha de basquetball privada de 8:00 am a 10:00 pm",
+      "priceService": 100,
+      "_id": {
+        "$oid": "6817ec193ae8afc5e930e2cd"
+      }
+    }
+  ],
+  "keeperRooms": [
+    {
+      "$oid": "68181bc5c732b1626f557d24"
+    },
+    {
+      "$oid": "68181e451e41e1ea6641eea2"
+    },
+    {
+      "$oid": "6818ea80523988f192af2abb"
+    },
+    {
+      "$oid": "682f2e899145cd583261fabe"
+    },
+    {
+      "$oid": "682f2f787ea1e235befe6b37"
+    },
+    {
+      "$oid": "682f34b3d0082dccc6680d88"
+    },
+    {
+      "$oid": "682f34bcd0082dccc6680d91"
+    },
+    {
+      "$oid": "682f34bfd0082dccc6680d9a"
+    },
+    {
+      "$oid": "682f34c3d0082dccc6680da3"
+    },
+    {
+      "$oid": "682f379c53fd77b6dddba8b6"
+    },
+    {
+      "$oid": "6830b364b5a03b23967f90c4"
+    },
+    {
+      "$oid": "6830b36cb5a03b23967f90d6"
+    }
+  ],
+  "keeperCategory": {
+    "$oid": "68379c89adb063068bb1d87f"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e80020"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-04T22:19:14.099Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:14:08.566Z"
+  },
+  "keeperEvents": [
+    {
+      "$oid": "6829241c44ee9d5f39a05579"
+    },
+    {
+      "$oid": "6829478d4d1512ca74635be3"
+    },
+    {
+      "$oid": "68379d82adb063068bb1d894"
+    },
+    {
+      "$oid": "6837a58a5a845b46a8510816"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "682f2ec87ea1e235befe6b2f"
+  },
+  "nameHotel": "Hotel las tres palmas",
+  "hotelAddresss": "10a avenida 81-80, zona 10. Guatemala, Guatemala",
+  "services": [
+    {
+      "typeService": "Gimnasio",
+      "description": "Servicio de gimnasio de 8:00 am a 9:00 pm",
+      "priceService": 40,
+      "_id": {
+        "$oid": "682f2ec87ea1e235befe6b30"
+      }
+    },
+    {
+      "typeService": "Sauna",
+      "description": "Es un cuarto de vapor, donde sudas las impurezas de cuerpo",
+      "priceService": 50,
+      "_id": {
+        "$oid": "6837cd1a32780bf149a9952b"
+      }
+    }
+  ],
+  "keeperRooms": [],
+  "keeperCategory": {
+    "$oid": "68379c89adb063068bb1d87f"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "keeperEvents": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:03:52.304Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:57:30.194Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6830b342b5a03b23967f90b3"
+  },
+  "nameHotel": "Hotel las mojarras",
+  "hotelAddresss": "7A Avenida 15-45. Guatemala, Guatemala",
+  "services": [
+    {
+      "typeService": "Gimnasio",
+      "description": "Servicio de gimnasio de 8:00 am a 9:00 pm",
+      "priceService": 40,
+      "_id": {
+        "$oid": "6830b343b5a03b23967f90b4"
+      }
+    }
+  ],
+  "keeperRooms": [],
+  "keeperCategory": {
+    "$oid": "6837b66918ca3c393b2ea958"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "keeperEvents": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-23T17:41:23.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:28:17.368Z"
+  }
+}]

@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "6829241c44ee9d5f39a05579"
+  },
+  "nameEvent": "Organizacion de bodas",
+  "description": "Se organizan bodas en el jardin del hotel, con todoas las comodidades",
+  "datesEvent": {},
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "additionalServices": [
+    {
+      "typeService": "Bar  con meseros",
+      "descriptionServices": "Un servicio de bar con meseros",
+      "priceService": 50,
+      "_id": {
+        "$oid": "6829241c44ee9d5f39a0557a"
+      }
+    }
+  ],
+  "typeEvent": "Evento_Privado",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-18T00:04:44.992Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T17:23:28.374Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6829478d4d1512ca74635be3"
+  },
+  "nameEvent": "Organizacion de bodas",
+  "description": "Se organizan bodas en el jardin del hotel, con todoas las comodidades",
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "additionalServices": [
+    {
+      "typeService": "Bar con meseros",
+      "descriptionServices": "Un servicio de bar con meseros",
+      "priceService": 500,
+      "_id": {
+        "$oid": "6829478d4d1512ca74635be4"
+      }
+    },
+    {
+      "typeService": "Buffete",
+      "descriptionServices": "Un servicio de buffete ilimitado",
+      "priceService": 7000,
+      "_id": {
+        "$oid": "682c99baf1347cc2119902db"
+      }
+    },
+    {
+      "typeService": "Buffete",
+      "descriptionServices": "Un servicio de buffete ilimitado",
+      "priceService": 7000,
+      "_id": {
+        "$oid": "682c99c7e3389a2aacef366c"
+      }
+    }
+  ],
+  "typeEvent": "Evento_Privado",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-18T02:35:57.766Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T15:03:35.396Z"
+  },
+  "datesEvent": {}
+},
+{
+  "_id": {
+    "$oid": "68379d82adb063068bb1d894"
+  },
+  "nameEvent": "Organizacion de fiestas",
+  "description": "Se organizan fiestas en el jardin del hotel, con todoas las comodidades, o en diferentes salones",
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "additionalServices": [
+    {
+      "typeService": "Bar con meseros",
+      "descriptionServices": "Un servicio de bar con meseros",
+      "priceService": 500,
+      "_id": {
+        "$oid": "68379d82adb063068bb1d895"
+      }
+    },
+    {
+      "typeService": "DJ",
+      "descriptionServices": "Uns ervicio de DJ con todo el equipo",
+      "priceService": 2000,
+      "_id": {
+        "$oid": "68379da6adb063068bb1d89b"
+      }
+    }
+  ],
+  "typeEvent": "Evento_Privado",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-28T23:34:26.226Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T23:35:02.525Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837a58a5a845b46a8510816"
+  },
+  "nameEvent": "Organizacion de conferencias",
+  "description": "Se organizan conferencias",
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "additionalServices": [
+    {
+      "typeService": "Buffete",
+      "descriptionServices": "Un servicio de buffete",
+      "priceService": 1500,
+      "_id": {
+        "$oid": "6837a58a5a845b46a8510817"
+      }
+    }
+  ],
+  "typeEvent": "Evento_Privado",
+  "priceEvent": 5000,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T00:08:42.650Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T00:08:42.650Z"
+  }
+}]

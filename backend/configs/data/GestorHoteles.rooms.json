@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "682f34b3d0082dccc6680d88"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "682f2ec87ea1e235befe6b2f"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 4,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:29:07.077Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T15:10:35.981Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682f34bcd0082dccc6680d91"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 2,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:29:16.360Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T14:29:16.360Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682f34bfd0082dccc6680d9a"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 3,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:29:19.157Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T14:29:19.157Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682f34c3d0082dccc6680da3"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 4,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:29:23.039Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T14:29:23.039Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6830b364b5a03b23967f90c4"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 5,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-23T17:41:56.409Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-23T17:41:56.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6830b36cb5a03b23967f90d6"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 6,
+  "state": false,
+  "createdAt": {
+    "$date": "2025-05-23T17:42:04.992Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-23T17:50:51.090Z"
+  }
+}]

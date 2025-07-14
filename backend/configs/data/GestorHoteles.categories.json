@@ -1,0 +1,62 @@
+[{
+  "_id": {
+    "$oid": "68379c89adb063068bb1d87f"
+  },
+  "typeCategory": "GlobalCategory",
+  "description": "Here you will find all products without a defined category.",
+  "keeperHotel": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-28T23:30:17.308Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:28:17.361Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6817e28959d4223c476b0eec"
+  },
+  "typeCategory": "3 estrellas",
+  "description": "Hoteles categorizados a 3 estrellas",
+  "keeperHotel": [
+    {
+      "$oid": "6817e642b5b6b49bc10eba56"
+    },
+    {
+      "$oid": "6817e7e2f26903ae49a002cb"
+    },
+    {
+      "$oid": "682f32f4df73445917494398"
+    },
+    {
+      "$oid": "682f330edf734459174943a4"
+    }
+  ],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-04T21:56:25.994Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:17:23.236Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837b66918ca3c393b2ea958"
+  },
+  "typeCategory": "2 estrellas",
+  "description": "Hoteles categorizados a 2 estrellas",
+  "keeperHotel": [
+    {
+      "$oid": "6830b342b5a03b23967f90b3"
+    }
+  ],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T01:20:41.127Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:28:17.366Z"
+  }
+}]

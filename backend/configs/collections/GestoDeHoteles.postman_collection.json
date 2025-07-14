@@ -1,0 +1,1432 @@
+{
+	"info": {
+		"_postman_id": "0f42ecd5-31b3-4714-ad1c-97e449584d38",
+		"name": "GestoDeHoteles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413968"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"kreyes\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cristian\",\r\n    \"surname\": \"Rosas\",\r\n    \"username\": \"crosas\",\r\n    \"email\": \"crosas@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/usersView",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"usersView"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUsers",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Reyes\",\r\n    \"username\": \"Kreyes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PasswordUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwMzMsImV4cCI6MTc0ODA0MDAzM30.-c1YPbu8g--P_WXjITXvUZdZbFVLOT1thiIMuBauSYQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"passwordOld\" : \"123456789\",\r\n    \"passwordNew\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/passwordUpdate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"passwordUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirmDeletion\" : true,\r\n    \"password\" : \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/userDelete/6817b3c3aac703dc65e8001e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"userDelete",
+								"6817b3c3aac703dc65e8001e"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotels",
+			"item": [
+				{
+					"name": "AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameHotel\" : \"Hotel las mojarras\",\r\n    \"hotelAddresss\" : \"7A Avenida 15-45. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Gimnasio\",\r\n    \"description\" : \"Servicio de gimnasio de 8:00 am a 9:00 pm\",\r\n    \"priceService\" : 40,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/addHotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"addHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewHotels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/viewHotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"viewHotels"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateHotel",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0NzUyNDAsImV4cCI6MTc0ODQ5MzI0MH0.ocCRsR_0C12LEDT3l3OHzIYzfTUwB1zq_db_kYaR7X8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameHotel\" : \"Hotel las mojarras\",\r\n    \"hotelAddresss\" : \"7A Avenida 15-45. Guatemala, Guatemala\",\r\n    \"typeCategory\": \"2 estrellas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/updateHotel/6830b342b5a03b23967f90b3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"updateHotel",
+								"6830b342b5a03b23967f90b3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteHotel",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/deleteHotel/6830b36cb5a03b23967f90d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"deleteHotel",
+								"6830b36cb5a03b23967f90d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Addservices",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0ODcyMDEsImV4cCI6MTc0ODUwNTIwMX0.YpqN8mQamjD-75i1mGG9uHCwAs9o_Y_bBbTmxSxCYrc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"services\" : [\r\n        {\r\n            \"typeService\" : \"Sauna\",\r\n            \"description\" : \"Es un cuarto de vapor, donde sudas las impurezas de cuerpo\",\r\n            \"priceService\": 50\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/addServices/682f2ec87ea1e235befe6b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"addServices",
+								"682f2ec87ea1e235befe6b2f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gategories",
+			"item": [
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODMiLCJpYXQiOjE3NDg0ODE2MzQsImV4cCI6MTc0ODQ5OTYzNH0.-egjHwFYyy9Mc3F2WiEQlmz4JvlH6WpcnkEyjmAHFjk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeCategory\": \"2 estrellas\",\r\n    \"description\" : \"Hoteles categorizados a 2 estrellas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/categories/addCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"categories",
+								"addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/categories/viewCategories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"categories",
+								"viewCategories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwOTA0MzMsImV4cCI6MTc0ODEwODQzM30.-4Ai4XG9VknFcG_2cPhdjd0ZPXWmDhlxeso9mRh6QTc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion para tener provacidad al maximo, y servicio las 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Century Hotel\",\r\n    \"numberRoom\" : 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/addRoom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"addRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewRooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/viewRooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"viewRooms"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewRoomsByHotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/getRoomsByHotel/682f2ec87ea1e235befe6b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"getRoomsByHotel",
+								"682f2ec87ea1e235befe6b2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateRoom",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwOTA0MzMsImV4cCI6MTc0ODEwODQzM30.-4Ai4XG9VknFcG_2cPhdjd0ZPXWmDhlxeso9mRh6QTc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presi\",\r\n    \"descriptionRoom\": \"Habitacion para tener provacidad al maximo, y servicio las 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Century Hotel\",\r\n    \"numberRoom\" : 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/6831be4fd117f0e5b5e25bb7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"updateRoom",
+								"6831be4fd117f0e5b5e25bb7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DateAvailableRoom",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\" : \"2025-05-30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateDateAvailableRoom/682cfc4b0d940b6a7ae6301e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"updateDateAvailableRoom",
+								"682cfc4b0d940b6a7ae6301e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRoom",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/deleteRoom/6830b36cb5a03b23967f90d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"deleteRoom",
+								"6830b36cb5a03b23967f90d6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "AddReservation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0OTA1MjcsImV4cCI6MTc0ODUwODUyN30.d5dDmORys7QdfxCnpcgDztM_9b-b9ZuczDvnP6qW1BA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2025-06-17T10:00:00Z\",\r\n    \"endDate\": \"2025-06-18T15:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservation/682f34bcd0082dccc6680d91",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"addReservation",
+								"682f34bcd0082dccc6680d91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReservationView",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"viewReservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewReservationsByIdHotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservationsByHotel/682f2ec87ea1e235befe6b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"viewReservationsByHotel",
+								"682f2ec87ea1e235befe6b2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDY1MTE5ODQsImV4cCI6MTc0NjUyOTk4NH0.vIPeGjMgfRAw8KhBV66fDzpjQOMipUfGRGBIwHprBv0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\" : \"2025-05-08\",\r\n    \"endDate\" : \"2025-05-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/updateReservation/6819abb218788bb3337298c3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"updateReservation",
+								"6819abb218788bb3337298c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelReservation",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/cancelReservation/682f2fa97ea1e235befe6b44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"cancelReservation",
+								"682f2fa97ea1e235befe6b44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0OTA1MjcsImV4cCI6MTc0ODUwODUyN30.d5dDmORys7QdfxCnpcgDztM_9b-b9ZuczDvnP6qW1BA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ConfirmReservation\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/confirmReservation/6837d9618fae572e56540a7b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"confirmReservation",
+								"6837d9618fae572e56540a7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddReservationEvent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0NzUyNDAsImV4cCI6MTc0ODQ5MzI0MH0.ocCRsR_0C12LEDT3l3OHzIYzfTUwB1zq_db_kYaR7X8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2025-06-07T15:30:00Z\",\r\n    \"endDate\": \"2025-06-09T20:00:00Z\",\r\n    \"selectedServicesTypes\" : [\"Buffete\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservationEvent/6837a58a5a845b46a8510816",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"addReservationEvent",
+								"6837a58a5a845b46a8510816"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewEventReservations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservationsEvent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"viewReservationsEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc4MzQ5MzAsImV4cCI6MTc0Nzg1MjkzMH0.Ov9GOfzSIQHcDRxv9Kx0ShjtM-Pjq68f_Wz2zraVE3g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2025-05-20T18:30:00Z\",\r\n    \"endDate\": \"2025-05-22T20:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/updateEventReservation/682ca1bb2246b054f50f7fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"updateEventReservation",
+								"682ca1bb2246b054f50f7fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelReservationEvent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc4MzQ5MzAsImV4cCI6MTc0Nzg1MjkzMH0.Ov9GOfzSIQHcDRxv9Kx0ShjtM-Pjq68f_Wz2zraVE3g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/cancelEventReservation/682ca1bb2246b054f50f7fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"cancelEventReservation",
+								"682ca1bb2246b054f50f7fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmReservationEvent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0NzUyNDAsImV4cCI6MTc0ODQ5MzI0MH0.ocCRsR_0C12LEDT3l3OHzIYzfTUwB1zq_db_kYaR7X8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ConfirmReservation\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/confirmReservationEvent/6837a5bb5a845b46a8510821",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"confirmReservationEvent",
+								"6837a5bb5a845b46a8510821"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "AddEventGeneral",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwOTA0MzMsImV4cCI6MTc0ODEwODQzM30.-4Ai4XG9VknFcG_2cPhdjd0ZPXWmDhlxeso9mRh6QTc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Concierto de carlos\",\r\n    \"description\" : \"Concierto de mana para maximo de 100 personas\",\r\n    \"startDate\" : \"2025-05-29\",\r\n    \"endDate\" : \"2025-05-31\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"additionalServices\": [\r\n        {\r\n          \"typeService\": \"Bar con meseros\",\r\n          \"descriptionServices\": \"Un servicio de bar con meseros\",\r\n          \"priceService\": 50\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/addEventGeneral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"addEventGeneral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEventPrivate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0NzUyNDAsImV4cCI6MTc0ODQ5MzI0MH0.ocCRsR_0C12LEDT3l3OHzIYzfTUwB1zq_db_kYaR7X8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de conferencias\",\r\n    \"description\" : \"Se organizan conferencias\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"additionalServices\": [\r\n        {\r\n          \"typeService\": \"Buffete\",\r\n          \"descriptionServices\": \"Un servicio de buffete\",\r\n          \"priceService\": 1500\r\n        }\r\n    ],\r\n    \"priceEvent\" : 5000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/addEventPrivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"addEventPrivate"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewEvent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/viewEvents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"viewEvents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEvent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc1OTk4ODQsImV4cCI6MTc0NzYxNzg4NH0.0aM9EzoaymfN0eOE-oLPiUwlWAMHfncGorrM8hT8I3k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/deleteEvent/6829478d4d1512ca74635be3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"deleteEvent",
+								"6829478d4d1512ca74635be3"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEventGeneral",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc2NzI0NzcsImV4cCI6MTc0NzY5MDQ3N30.cmWeTiL-sjhCqV6g8IYfd-cXKkCahtv03qLGqsNdxbk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de bodas\",\r\n    \"startDate\" : \"2025-05-25\",\r\n    \"endDate\" : \"2025-05-26\",\r\n    \"description\" : \"Se organizan bodas en el jardin del hotel, con todoas las comodidades\",\r\n    \"typeEvent\" : \"Evento_Privado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateEventGeneral/6829241c44ee9d5f39a05579",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"updateEventGeneral",
+								"6829241c44ee9d5f39a05579"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEventPrivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc2NzI0NzcsImV4cCI6MTc0NzY5MDQ3N30.cmWeTiL-sjhCqV6g8IYfd-cXKkCahtv03qLGqsNdxbk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de bodas\",\r\n    \"description\" : \"Se organizan bodas en el jardin del hotel, con todoas las comodidades\",\r\n    \"typeEvent\" : \"Evento_Privado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateEventPrivate/6829241c44ee9d5f39a05579",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"updateEventPrivate",
+								"6829241c44ee9d5f39a05579"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateServicesEvent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0NzUyNDAsImV4cCI6MTc0ODQ5MzI0MH0.ocCRsR_0C12LEDT3l3OHzIYzfTUwB1zq_db_kYaR7X8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"additionalServices\": [\r\n        {\r\n          \"typeService\": \"DJ\",\r\n          \"descriptionServices\": \"Uns ervicio de DJ con todo el equipo\",\r\n          \"priceService\": 2000\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateServicesEvent/68379d82adb063068bb1d894",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"updateServicesEvent",
+								"68379d82adb063068bb1d894"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoices",
+			"item": [
+				{
+					"name": "ViewHistorialinvoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/invoices/viewInvoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"invoices",
+								"viewInvoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteInvoice",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODM3OWM4OWFkYjA2MzA2OGJiMWQ4ODUiLCJpYXQiOjE3NDg0NzUyNDAsImV4cCI6MTc0ODQ5MzI0MH0.ocCRsR_0C12LEDT3l3OHzIYzfTUwB1zq_db_kYaR7X8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/invoices/deleteInvoice/6837d99d8fae572e56540a8b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"invoices",
+								"deleteInvoice",
+								"6837d99d8fae572e56540a8b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statistics",
+			"item": [
+				{
+					"name": "ViewmostRequestedHotels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/statistics/mostRequestedHotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"statistics",
+								"mostRequestedHotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewMonthlyOccupancy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/statistics/monthlyOccupancy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"statistics",
+								"monthlyOccupancy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
